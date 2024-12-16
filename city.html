@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>China</title>
+		<link rel="icon" type="image/x-icon" href="img/china_logo.webp">
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
+		.container {
+		position: relative;
+		width: 25%;
+		}
+
+		.image {
+		display: block;
+		width: 100%;
+		height: 100%;
+		}
+
+		.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: rgba(0, 0, 0, 0.1);
+		background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		.container:hover .overlay {
+		opacity: 1;
+		}
+
+		.text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		}
+
+		#flex{
+			display:flex;
+		}
+
+		body {font-family: "Lato", sans-serif;}
+
+		.tablink {
+		background-color: #777;
+		color: white;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: 25%;
+		}
+
+		.tablink:hover {
+		background-color: #666;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+		color: black;
+		display: none;
+		padding: 260px;
+		text-align: center;
+		
+		}
+
+		#Beijing {
+			background:url(img/Beijing-c4.jpg);
+			background-size: 100%;
+			width: 100%;
+			height: 100%;
+		}
+		#Shanghai {background:url(img/Shanghai-c4.jpg);
+			background-size: 100%;
+			width: 100%;
+			height: 100%;}
+		#Guangzhou {background:url(img/Guangzhou-c4.jpeg);
+			background-size: 100%;
+			width: 100%;
+			height: 100%;}
+		#Shenzhen {background:url(img/Shenzhen-c4.webp);
+			background-size: 100%;
+			width: 100%;
+			height: 100%;}
+
+		#city4{
+			display:block;
+		}
+	</style>
+	</head>
+	<body>
+		<!-- Header -->
+		 <header class="Heading">
+			<div class="left-part">
+				<a href=""><img src="img/china_logo.webp"></a>
+				<h1><span>C</span>h<span>in</span>a</h1>
+			</div>
+			<div class="right-part">
+				<div><a href="index_home.html">Home</a></div>
+				<div><a href="food.html">Food</a></div>
+				<div id="now"><a href="city.html">City</a></div>
+				<div><a href="chinese_zodiac.html">Chinese Zodiac</a></div>
+			</div>
+		 </header>
+		 	
+		<!-- main -->
+		<!-- banner -->
+		<div  class="banner-text" id="city">
+			<div style="text-align:center">
+				<h1>China</h1>
+				<div><p>China is a vast and diverse country with hundreds of cities, each with its own unique characteristics, history, and cultural significance.</p></div>
+			</div>
+		</div>
+		<!-- city -->
+		
+		<h2 style="text-align:center;background-color: black; color: aliceblue;font-size: 60px;
+    padding: 20px 10px;">Some famous scenic spots in China</h2>
+
+		<div id="flex">
+			<div class="container">
+				<img src="img/The Great Wall.webp" alt="The Great Wall" class="image">
+				<div class="overlay">
+				<div class="text">The Great Wall</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="img/The Terracotta Army.webp" alt="The Terracotta Army" class="image">
+				<div class="overlay">
+				<div class="text">The Terracotta Army</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="img/Zhangjiajie National Forest Park.webp" alt="Zhangjiajie National Forest Park" class="image">
+				<div class="overlay">
+				<div class="text">Zhangjiajie National Forest Park</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="img/The Potala Palace.png" alt="The Potala Palace" class="image">
+				<div class="overlay">
+				<div class="text">The Potala Palace</div>
+				</div>
+			</div>
+		</div>
+		<!-- city 4 -->
+		<div id="city4">
+			<div id="Beijing" class="tabcontent">
+				<h1 style="backdrop-filter: invert(30%);">Beijing</h1>
+				<p style="backdrop-filter: invert(30%);">The capital city of China, Beijing is a bustling metropolis with a rich history that spans over three millennia. It's a cultural and political hub, famous for its historical sites and modern developments. </p>
+			</div>
+			
+			<div id="Shanghai" class="tabcontent">
+				<h1 style="backdrop-filter: invert(30%);">Shanghai</h1>
+				<p style="backdrop-filter: invert(30%);">As China's largest city and a global financial center, Shanghai is known for its stunning skyline, vibrant culture, and historical landmarks. It's a blend of East and West, tradition and modernity.</p> 
+			</div>
+			
+			<div id="Guangzhou" class="tabcontent">
+				<h1 style="backdrop-filter: invert(30%);">Guangzhou</h1>
+				<p style="backdrop-filter: invert(30%);">Located in southern China, Guangzhou is the capital of Guangdong Province and a major port city. It’s known for its Cantonese cuisine, trade fairs, and beautiful architecture.</p>
+			</div>
+			
+			<div id="Shenzhen" class="tabcontent">
+				<h1 style="backdrop-filter: invert(30%);">Shenzhen</h1>
+				<p style="backdrop-filter: invert(30%);">Situated in Guangdong Province, Shenzhen is a modern metropolis that has rapidly developed from a fishing village into a major tech hub. It’s known for its vibrant economy and urban innovations.</p>
+			</div>
+		  
+			<div>
+			<button class="tablink" onclick="openCity('Beijing', this, 'bisque')" id="defaultOpen">Beijing</button>
+			<button class="tablink" onclick="openCity('Shanghai', this, 'bisque')">Shanghai</button>
+			<button class="tablink" onclick="openCity('Guangzhou', this, 'bisque')">Guangzhou</button>
+			<button class="tablink" onclick="openCity('Shenzhen', this, 'bisque')">Shenzhen</button>
+			</div>
+		</div>
+		  <script>
+		  function openCity(cityName,elmnt,color) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+			  tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+			  tablinks[i].style.backgroundColor = "";
+			}
+			document.getElementById(cityName).style.display = "block";
+			elmnt.style.backgroundColor = color;
+		  
+		  }
+		  
+		  document.getElementById("defaultOpen").click();
+		  </script>
+		<!-- footer -->
+		 <br>
+		<footer>
+			<div style="text-align:center;" class="footer">
+				<h1>Go to another page?</h4>
+				<div id="footer">
+					<div><a href="index_home.html">Home</a></div>
+					<div><a href="food.html">Food</a></div>
+					<div><a href="city.html">City</a></div>
+					<div><a href="chinese_zodiac.html">Chinese Zodiac</a></div>
+				</div>
+				<p class="w3-medium">BY <a href="" target="_blank" class="w3-hover-text-green">Haoxuan Zheng@2024</a></p>
+			</div>
+		</footer>
+	
+	</body>

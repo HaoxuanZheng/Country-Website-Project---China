@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>China</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
+		
+	</style>
+	</head>
+	<body>
+		<!-- Header -->
+		 <header class="Heading">
+			<div class="left-part">
+				<a href="#top"><img src="img/china_logo.webp"></a>
+				<h1><span>C</span>h<span>in</span>a</h1>
+			</div>
+			<div class="right-part">
+				<div><a href="index_home.html">Home</a></div>
+				<div id="now"><a href="food.html">Food</a></div>
+				<div><a href="city.html">City</a></div>
+				<div><a href="chinese_zodiac.html">Chinese Zodiac</a></div>
+			</div>
+		 </header>
+		 	
+		<!-- main -->
+
+		<!-- banner -->
+		<div  class="banner-text" id="food">
+			<div style="text-align:center">
+				<h1>China</h1>
+				<h2>Food</h2>
+				<div><p>In every dish, a thousand stories are woven together.</p></div>
+			</div>
+		</div>
+		<!-- Food Introduction -->
+		
+		<!-- food photo -->
+		<style>
+			
+			/* Center website */
+			.main {
+				background-color: #222;
+				color: aliceblue;
+				text-align:center
+			}
+			
+			h1 {
+			  font-size: 50px;
+			  word-break: break-all;
+			}
+			
+			.row {
+			  margin: 10px -16px;
+			}
+			
+			/* Add padding BETWEEN each column */
+			.row,
+			.row > .column {
+			  padding: 8px;
+			}
+			
+			/* Create three equal columns that floats next to each other */
+			.column {
+			  float: left;
+			  width: 33.33%;
+			  display: none; /* Hide all elements by default */
+			}
+			
+			/* Clear floats after rows */ 
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			
+			/* Content */
+			.content {
+			  background-color: #222;
+			  padding: 10px;
+			}
+			
+			/* The "show" class is added to the filtered elements */
+			.show {
+			  display: block;
+			}
+			
+			/* Style the buttons */
+			.btn {
+			  border: none;
+			  outline: none;
+			  padding: 12px 16px;
+			  background-color: #222;
+			  cursor: pointer;
+			  color: aliceblue;
+			}
+			
+			.btn:hover {
+			  background-color: #666;
+			  
+			}
+			
+			.btn.active {
+			  background-color: #666;
+			  color: white;
+			}
+			</style>
+			</head>
+			<body>
+			
+			<!-- MAIN (Center website) -->
+			<div class="main">
+			
+			<h1>Eight major cuisines of China</h1>
+			<hr>
+			
+			<h2 style="padding: 30px;">Traditional Chinese cuisine is renowned around the world for its uniqueness, culinary sophistication, aroma, flavor, color and appearance.</h2>
+			
+			<div id="myBtnContainer">
+			  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			  <button class="btn" onclick="filterSelection('1')">Sichuan cuisine</button>
+			  <button class="btn" onclick="filterSelection('2')">Hunan cuisine</button>
+			  <button class="btn" onclick="filterSelection('3')">Cantonese cuisine</button>
+			  <button class="btn" onclick="filterSelection('4')">Fujian cuisine</button>
+			  <button class="btn" onclick="filterSelection('5')">Jiangsu cuisine</button>
+			  <button class="btn" onclick="filterSelection('6')">Zhejiang cuisine</button>
+			  <button class="btn" onclick="filterSelection('7')">Anhui cuisine</button>
+			  <button class="btn" onclick="filterSelection('8')">Shandong cuisine.</button>
+			</div>
+			
+			<!-- Sichuan cuisine -->
+			<div class="row">
+			  <div class="column 1">
+				<div class="content">
+				  <img src="img/Kung Pao Chicken.jpg" alt="Kung Pao Chicken" style="width:100%">
+				  <h4>Kung Pao Chicken</h4>
+				  <p>Stir-fried chicken with peanuts, vegetables, and chili peppers.</p>
+				</div>
+			  </div>
+			  <div class="column 1">
+				<div class="content">
+				<img src="img/Mapo Tofu.webp" alt="Mapo Tofu" style="width:100%">
+				  <h4>Mapo Tofu</h4>
+				  <p>Soft tofu in a spicy and numbing sauce with minced meat.</p>
+				</div>
+			  </div>
+			  <div class="column 1">
+				<div class="content">
+				<img src="img/Twice-Cooked Pork.webp" alt="Twice-Cooked Pork" style="width:100%">
+				  <h4>Twice-Cooked Pork</h4>
+				  <p>Pork belly boiled and then stir-fried with vegetables and chili bean paste.</p>
+				</div>
+			  </div>
+			  <div class="column 1">
+				<div class="content">
+				<img src="img/Dan Dan Noodles.jpg" alt="Dan Dan Noodles" style="width:100%">
+				  <h4>Dan Dan Noodles</h4>
+				  <p>Noodles served in a spicy, savory sauce with minced pork and preserved vegetables.</p>
+				</div>
+			  </div>
+
+			  <!-- Hunan cuisine -->
+			  <div class="column 2">
+				<div class="content">
+				  <img src="img/Mao’s Braised Pork.jpg" alt="Mao’s Braised Pork" style="width:100%">
+				  <h4>Mao’s Braised Pork</h4>
+				  <p>Pork belly braised with soy sauce and sugar.</p>
+				</div>
+			  </div>
+			  <div class="column 2">
+				<div class="content">
+				<img src="img/Steamed Fish Head with Diced Hot Red Peppers.jpg" alt="Steamed Fish Head with Diced Hot Red Peppers" style="width:100%">
+				  <h4>Steamed Fish Head with Diced Hot Red Peppers</h4>
+				  <p>Fish head topped with chopped chili peppers and steamed.</p>
+				</div>
+			  </div>
+			  <div class="column 2">
+				<div class="content">
+				<img src="img/Stir-Fried Shredded Pork with Preserved Vegetables.webp" alt="Stir-Fried Shredded Pork with Preserved Vegetables" style="width:100%">
+				  <h4>Stir-Fried Shredded Pork with Preserved Vegetables</h4>
+				  <p>LPork stir-fried with preserved vegetables and hot peppers.</p>
+				</div>
+			  </div>
+			  <div class="column 2">
+				<div class="content">
+				<img src="img/Dry Pot Chicken.jpg" alt="Dry Pot Chicken" style="width:100%">
+				  <h4>Dry Pot Chicken</h4>
+				  <p>Spicy chicken stir-fried with vegetables and served in a hot pot.</p>
+				</div>
+			  </div>
+			
+			  <!-- Cantonese cuisine -->
+			  <div class="column 3">
+				<div class="content">
+				  <img src="img/Dim Sum.jpg" alt="Dim Sum" style="width:100%">
+				  <h4>Dim Sum</h4>
+				  <p>A variety of small dishes like dumplings, buns, and rolls, often served with tea.</p>
+				</div>
+			  </div>
+			  <div class="column 3">
+				<div class="content">
+				<img src="img/Roast Duck.jpeg" alt="Roast Duck" style="width:100%">
+				  <h4>Roast Duck</h4>
+				  <p>Duck roasted until crispy and served with a sweet and savory sauce.</p>
+				</div>
+			  </div>
+			  <div class="column 3">
+				<div class="content">
+				<img src="img/Steamed Fish.jpeg" alt="Steamed Fish" style="width:100%">
+				  <h4>Steamed Fish</h4>
+				  <p>Fresh fish steamed with ginger and scallions.</p>
+				</div>
+			  </div>
+			  <div class="column 3">
+				<div class="content">
+				<img src="img/Char Siu.jpeg" alt="Char Siu" style="width:100%">
+				  <h4>Char Siu</h4>
+				  <p>Barbecued pork marinated in a sweet, savory sauce.</p>
+				</div>
+			  </div>
+
+			  <!-- Fujian cuisine -->
+			  <div class="column 4">
+				<div class="content">
+				  <img src="img/Buddha Jumps Over the Wall.jpeg" alt="Buddha Jumps Over the Wall" style="width:100%">
+				  <h4>Buddha Jumps Over the Wall</h4>
+				  <p>A luxurious soup with a mix of seafood, meats, and herbs.</p>
+				</div>
+			  </div>
+			  <div class="column 4">
+				<div class="content">
+				<img src="img/Lychee Pork.jpg" alt="Lychee Pork" style="width:100%">
+				  <h4>Lychee Pork</h4>
+				  <p>Sweet and sour pork shaped to resemble lychees.</p>
+				</div>
+			  </div>
+			  <div class="column 4">
+				<div class="content">
+				<img src="img/Steamed Abalone with Garlic.webp" alt="Steamed Abalone with Garlic" style="width:100%">
+				  <h4>Steamed Abalone with Garlic</h4>
+				  <p>LAbalone steamed with garlic and seasoning.</p>
+				</div>
+			  </div>
+			  <div class="column 4">
+				<div class="content">
+				<img src="img/Wok-Fried Clams with Basil.jpg" alt="Wok-Fried Clams with Basil" style="width:100%">
+				  <h4>Wok-Fried Clams with Basil</h4>
+				  <p>Clams stir-fried with basil and garlic.</p>
+				</div>
+			  </div>
+
+			   <!-- Jiangsu cuisine -->
+			   <div class="column 5">
+				<div class="content">
+				  <img src="img/Sweet and Sour Mandarin Fish.jpg" alt="Sweet and Sour Mandarin Fish" style="width:100%">
+				  <h4>Sweet and Sour Mandarin Fish</h4>
+				  <p>Fish shaped like a squirrel, deep-fried and coated with sweet and sour sauce.</p>
+				</div>
+			  </div>
+			  <div class="column 5">
+				<div class="content">
+				<img src="img/Braised Pork Belly.jpg" alt="Braised Pork Belly" style="width:100%">
+				  <h4>Braised Pork Belly</h4>
+				  <p>Pork belly braised in a sweet soy sauce mixture.</p>
+				</div>
+			  </div>
+			  <div class="column 5">
+				<div class="content">
+				<img src="img/Lion’s Head Meatballs.jpg" alt="Lion’s Head Meatballs" style="width:100%">
+				  <h4>Lion’s Head Meatballs</h4>
+				  <p>Large, tender pork meatballs stewed with vegetables.</p>
+				</div>
+			  </div>
+			  <div class="column 5">
+				<div class="content">
+				<img src="img/Yangzhou Fried Rice.webp" alt="Yangzhou Fried Rice" style="width:100%">
+				  <h4>Yangzhou Fried Rice</h4>
+				  <p>A colorful fried rice dish with a variety of meats and vegetables.</p>
+				</div>
+			  </div>
+
+			   <!-- Zhejiang cuisine -->
+			   <div class="column 6">
+				<div class="content">
+				  <img src="img/Dongpo Pork.jpg" alt="Dongpo Pork" style="width:100%">
+				  <h4>Dongpo Pork</h4>
+				  <p>Braised pork belly named after the famous poet Su Dongpo.</p>
+				</div>
+			  </div>
+			  <div class="column 6">
+				<div class="content">
+				<img src="img/West Lake Fish in Vinegar Gravy.jpg" alt="West Lake Fish in Vinegar Gravy" style="width:100%">
+				  <h4>West Lake Fish in Vinegar Gravy</h4>
+				  <p>Fish cooked in a sweet and sour vinegar sauce.</p>
+				</div>
+			  </div>
+			  <div class="column 6">
+				<div class="content">
+				<img src="img/Longjing Shrimp.jpg" alt="Longjing Shrimp" style="width:100%">
+				  <h4>Longjing Shrimp</h4>
+				  <p>Shrimp stir-fried with Longjing tea leaves.</p>
+				</div>
+			  </div>
+			  <div class="column 6">
+				<div class="content">
+				<img src="img/Beggar’s Chicken.jpg" alt="Beggar’s Chicken" style="width:100%">
+				  <h4>Beggar’s Chicken</h4>
+				  <p>Chicken stuffed, wrapped in lotus leaves, and baked in clay.</p>
+				</div>
+			  </div>
+
+
+			   <!-- Anhui cuisine -->
+			   <div class="column 7">
+				<div class="content">
+				  <img src="img/Li Hongzhang Hotchpotch.jpg" alt="Li Hongzhang Hotchpotch" style="width:100%">
+				  <h4>Li Hongzhang Hotchpotch</h4>
+				  <p>A rich stew of meats, seafood, and vegetables.</p>
+				</div>
+			  </div>
+			  <div class="column 7">
+				<div class="content">
+				<img src="img/Stinky Tofu.jpg" alt="Stinky Tofu" style="width:100%">
+				  <h4>Stinky Tofu</h4>
+				  <p>Fermented tofu known for its strong odor and rich flavor.</p>
+				</div>
+			  </div>
+			  <div class="column 7">
+				<div class="content">
+				<img src="img/Braised Turtle with Ham.avif" alt="Braised Turtle with Ham" style="width:100%">
+				  <h4>Braised Turtle with Ham</h4>
+				  <p>Turtle braised with ham in a savory broth.</p>
+				</div>
+			  </div>
+			  <div class="column 7">
+				<div class="content">
+				<img src="img/Yellow Crab Shell Cake.jpg" alt="Yellow Crab Shell Cake" style="width:100%">
+				  <h4>Yellow Crab Shell Cake</h4>
+				  <p>A crispy pastry stuffed with meat or sweet fillings.</p>
+				</div>
+			  </div>
+
+			   <!-- Shandong cuisine -->
+			   <div class="column 8">
+				<div class="content">
+				  <img src="img/Braised Sea Cucumber with Scallion.webp" alt="Braised Sea Cucumber with Scallion" style="width:100%">
+				  <h4>Braised Sea Cucumber with Scallion</h4>
+				  <p>Sea cucumber braised with scallions in a rich sauce.</p>
+				</div>
+			  </div>
+			  <div class="column 8">
+				<div class="content">
+				<img src="img/Dezhou Braised Chicken.jpg_large" alt="Dezhou Braised Chicken" style="width:100%">
+				  <h4>Dezhou Braised Chicken</h4>
+				  <p>Chicken braised with a variety of spices until tender.</p>
+				</div>
+			  </div>
+			  <div class="column 8">
+				<div class="content">
+				<img src="img/Jinan Sweet and Sour Carp.jpg" alt="Jinan Sweet and Sour Carp" style="width:100%">
+				  <h4>Jinan Sweet and Sour Carp</h4>
+				  <p>Carp fish fried and covered in a sweet and sour sauce.</p>
+				</div>
+			  </div>
+			  <div class="column 8">
+				<div class="content">
+				<img src="img/Eight Treasures Stuffed Duck.webp" alt="Eight Treasures Stuffed Duck" style="width:100%">
+				  <h4>Eight Treasures Stuffed Duck</h4>
+				  <p>Duck stuffed with a mixture of meats, nuts, and rice, then braised.</p>
+				</div>
+			  </div>
+
+			<!-- END GRID -->
+
+			</div>
+			
+			<!-- END MAIN -->
+			</div>
+			
+			<script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("column");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+			
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+			
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				}
+			  }
+			  element.className = arr1.join(" ");
+			}
+			
+			
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			  });
+			}
+			</script>
+			
+		<!-- footer -->
+		<footer>
+			<div style="text-align:center;" class="footer">
+				<h1>Go to another page?</h4>
+				<div id="footer">
+					<div><a href="index_home.html">Home</a></div>
+					<div><a href="food.html">Food</a></div>
+					<div><a href="city.html">City</a></div>
+					<div><a href="chinese_zodiac.html">Chinese Zodiac</a></div>
+				</div>
+				<p class="w3-medium">BY <a href="" target="_blank" class="w3-hover-text-green">Haoxuan Zheng@2024</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
